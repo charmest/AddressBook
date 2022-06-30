@@ -1,0 +1,49 @@
+A l'exécution de la classe FenetrePrincipale :
+
+Une fenêtre s'ouvre avec :
+
+* une liste de noms issus du fichier "phone.properties"
+* le numéro correspondant au nom sélectionné est affiché dans le cadre situé en bas
+* une barre de menu avec des sous-menus
+* des boutons : Ajouter, Supprimer, Modifier, Enregistrer
+
+Lorsqu'on clique sur "Enregistrer" :
+* Mise à jour du fichier "phone.properties" à partir de la liste de contacts
+
+Lorsqu'on clique sur "Ajouter" :
+* Ouverture d'une nouvelle fenêtre pour saisir le nom du nouveau contact
+* Les autres boutons se dégrisent
+
+Après la saisie du nom, lorsqu'on clique sur "Valider" :
+* Ouverture d'une nouvelle fenêtre pour saisir le numéro correspondant
+
+Après la saisie du numéro, lorsqu'on clique sur "Valider" :
+* Association du numéro au nom fraichement créé 
+* Ajout du contact à la liste de contacts
+
+Lorsqu'on clique sur "Modifier" :
+* Ouverture d'une nouvelle fenêtre pour saisir le numéro correspondant au nom à modifier
+
+Après la saisie du numéro, lorsqu'on clique sur "Valider" :
+* Association du numéro fraichement créé au nom sélectonné
+* Mise à jour de la liste
+
+Lorsqu'on clique sur "Supprimer" :
+* L'élément sélectionné est supprimé de la liste
+* Le bouton se grise
+
+A noter que les modifications précédentes se font au niveau de la liste donc seulement au niveau graphique.
+Pour mettre à jour le fichier de sauvegarde "phone.properties"en fonction des modifications
+et ainsi retrouver ses données lors de la prochaine exécution de l'application,
+il faut cliquer sur le bouton "Enregistrer" avant de fermer la fenêtre principale.
+
+A noter qu'après avoir ajouté ou modifié un numéro,
+il faut sélectionner un élément en cliquant sur la liste
+pour rafraîchir l'affichage
+
+Le code comporte des lignes d'affichages en console qui ont servies à vérifier la récupération des données par les méthodes
+Il comporte aussi des lignes de commentaires comprenant les différentes techniques utilisées pour entrer des données
+ainsi que des controleurs spéciaux pour un certain type de boutons dont on aurait pu se passer.
+De temps en temps, les attributs sont accédés de manière statique et de temps en temps, ils sont accédés via des getters.
+
+La documentation complète se trouve dans le répertoire "doc"
